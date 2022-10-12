@@ -29,30 +29,35 @@ body
   overflow: hidden
   cursor: default
   background: $blue url("../img/bg.jpg") no-repeat 50% 0/cover
-  padding: 345px 0 0 0
+  padding: 360px 0 0 0
   display: flex
   flex-direction: column
   align-items: center
   &__title
     font-family: $font-suisse-bold
-    font-size: 146px
-    line-height: 134px
+    font-size: 120px
+    line-height: 110px
     text-align: center
     letter-spacing: 0.04em
     text-transform: uppercase
     color: $grey
-    margin: 0 0 115px 0
+    margin: 0 0 150px 0
     span
       font-family: $font-wulkan
   &__info
+    position: relative
+    left: 119px
     &-top
-      margin: 0 0 60px 0
+      margin: 0 0 120px 0
+    &-bottom
+      position: relative
+      left: -100px
     &-item
       display: flex
       .in
         white-space: nowrap
         font-family: $font-suisse-semb
-        font-size: 79px
+        font-size: 80px
         line-height: 102px
         text-align: center
         letter-spacing: 0.01em
@@ -61,19 +66,24 @@ body
         -webkit-text-stroke-width: 3.2px
         -webkit-text-stroke-color: $grey
         color: transparent
-        margin: 0 22px 0 0
+        margin: 0 41px 0 0
       .bonus
-        margin: 0 22px 0 0
+        margin: 0 41px 0 0
+        position: relative
         &__top
           white-space: nowrap
           font-family: $font-suisse-semb
-          font-size: 79px
+          font-size: 80px
           line-height: 102px
           text-align: center
           letter-spacing: 0.01em
           text-transform: uppercase
           color: $grey
         &__bottom
+          position: absolute
+          bottom: -50px
+          left: 50%
+          transform: translateX(-50%)
           white-space: nowrap
           font-family: $font-suisse-semb
           font-size: 49px
